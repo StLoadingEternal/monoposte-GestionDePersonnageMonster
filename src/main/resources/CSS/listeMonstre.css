@@ -1,0 +1,7 @@
+Button{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.1, 2, 2);
+}
+
+TableView{
+    -fx-control-inner-background-alt: #f2f2f2;
+}
