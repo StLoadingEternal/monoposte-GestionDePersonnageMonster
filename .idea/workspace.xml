@@ -5,22 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d74c68ff-c26a-41b7-b4e6-761a05c1feee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/MonstreController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Monstre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/MonstreMetier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Utilisateur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/SansFamille/CreerMonstre.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/SansFamille/Identification.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/SansFamille/ListeMonstre.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp2_lassana_damoi/MonstreApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/monstre.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/ConnexionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/EditionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/RechercheController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Monstre/Monstre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/listeMonstre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/listeMonstre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Monstre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MonstreMetier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Monstre/MonstreMetier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Utilisateur/Utilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Identification.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp2_lassana_damoi/Identification.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/SansFamille/CreerMonstre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp2_lassana_damoi/EditerMonstre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/SansFamille/Identification.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/SansFamille/ListeMonstre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp2_lassana_damoi/ListeMonstre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/listeMonstre.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp2_lassana_damoi/MonstreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp2_lassana_damoi/MonstreApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/CSS/Identification.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CSS/Identification.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CSS/listeMonstre.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CSS/listeMonstre.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +60,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.MonstreApplication.executor": "Run",
+    "Application.com.example.tp2_lassana_damoi.MonstreApplication.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "OverrideImplement.generate.javadoc": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -77,6 +83,60 @@
       <recent name="C:\Users\2301108\Documents\GitHub\monoposte-GestionDePersonnageMonster\src\main\java\View\SansFamille" />
       <recent name="C:\Users\2301108\Documents\GitHub\monoposte-GestionDePersonnageMonster\src\main\resources\Images" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\2301108\Documents\GitHub\monoposte-GestionDePersonnageMonster\src\main\resources\com\example\tp2_lassana_damoi" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.example.tp2_lassana_damoi.MonstreApplication">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.tp2_lassana_damoi.HelloApplication" />
+      <module name="TP2_Lassana_Damoi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonstreApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.MonstreApplication" />
+      <module name="TP2_Lassana_Damoi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.example.tp2_lassana_damoi.MonstreApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.tp2_lassana_damoi.MonstreApplication" />
+      <module name="TP2_Lassana_Damoi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tp2_lassana_damoi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.example.tp2_lassana_damoi.MonstreApplication" />
+        <item itemvalue="Application.MonstreApplication" />
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -94,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1759691624947</updated>
       <workItem from="1759691626387" duration="2196000" />
-      <workItem from="1759694853363" duration="2798000" />
+      <workItem from="1759694853363" duration="24840000" />
     </task>
     <servers />
   </component>

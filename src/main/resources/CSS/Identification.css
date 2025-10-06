@@ -2,14 +2,3 @@ Button{
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.1, 2, 2);
 }
 
-.vert {
-    -fx-background-color: #0aa71a;
-}
-
-.rouge{
-    -fx-background-color: #f32c2c;
-}
-
-.jaune{
-    -fx-background-color: #f1f126;
-}

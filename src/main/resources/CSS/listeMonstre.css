@@ -1,7 +1,39 @@
 Button{
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.1, 2, 2);
+
+}
+
+Button:hover {
+    -fx-background-color: #cccccc;  /* Fond gris plus foncé au survol */
+    -fx-text-fill: #333333;         /* Texte un peu plus foncé au survol */
 }
 
 TableView{
     -fx-control-inner-background-alt: #f2f2f2;
+}
+
+.vert {
+    -fx-background-color: #0aa71a; /* Fond vert */
+}
+
+.vert:hover {
+    -fx-background-color: #3ccf3b; /* Fond vert clair au survol */
+}
+
+/* Style spécifique pour le bouton rouge */
+.rouge {
+    -fx-background-color: #f32c2c; /* Fond rouge */
+}
+
+.rouge:hover {
+    -fx-background-color: #ff5f5f;
+}
+
+/* Style spécifique pour le bouton jaune */
+.jaune {
+    -fx-background-color: #f1f126; /* Fond jaune */
+}
+
+.jaune:hover {
+    -fx-background-color: #f1f67a;
 }
