@@ -15,6 +15,8 @@ import java.util.ResourceBundle;
 
 public class RechercheController implements Initializable {
 
+    private MonstreController monstreController;
+
     @FXML
     private TableView<Monstre> tableData;
 
@@ -66,11 +68,22 @@ public class RechercheController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         intialiserTableau();
         intialiserSpinner();
+        monstreController = MonstreController.getInstance();
+        monstreController.setMonstres(tableData.getItems());
         connexionBtn.setOnAction(e -> {
             try {
                 mainApp.fenetreConnexion();
             } catch (Exception ex) {
                 throw new RuntimeException(ex);
+            }
+        });
+
+        // effacer selection
+
+        effaceSelectionBtn.setOnAction(e -> {
+            Monstre monstre = tableData.getSelectionModel().getSelectedItem();
+            if (monstre != null) {
+                MonstreController.supprimerMonstre(monstre, tableData);
             }
         });
     }

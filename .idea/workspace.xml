@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d74c68ff-c26a-41b7-b4e6-761a05c1feee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/ConnexionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/EditionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/RechercheController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Monstre/Monstre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Monstre.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MonstreMetier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Monstre/MonstreMetier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Utilisateur/Utilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Identification.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp2_lassana_damoi/Identification.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/SansFamille/CreerMonstre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp2_lassana_damoi/EditerMonstre.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/SansFamille/Identification.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/SansFamille/ListeMonstre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp2_lassana_damoi/ListeMonstre.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/listeMonstre.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp2_lassana_damoi/MonstreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp2_lassana_damoi/MonstreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CSS/Identification.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CSS/Identification.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CSS/listeMonstre.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CSS/listeMonstre.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MonstreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/MonstreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/RechercheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/RechercheController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,12 +55,18 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/2301108/Documents/GitHub/monoposte-GestionDePersonnageMonster/src/main/java/View/SansFamille",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/lass/Cours/Applications Monopostes2/tp2/monoposte-GestionDePersonnageMonster",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -90,7 +82,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.example.tp2_lassana_damoi.MonstreApplication">
+  <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.tp2_lassana_damoi.HelloApplication" />
       <module name="TP2_Lassana_Damoi" />
@@ -132,8 +124,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.example.tp2_lassana_damoi.MonstreApplication" />
         <item itemvalue="Application.MonstreApplication" />
+        <item itemvalue="Application.com.example.tp2_lassana_damoi.MonstreApplication" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
@@ -141,8 +133,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
-        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
       </set>
     </attachedChunks>
   </component>
@@ -155,10 +147,22 @@
       <updated>1759691624947</updated>
       <workItem from="1759691626387" duration="2196000" />
       <workItem from="1759694853363" duration="24840000" />
+      <workItem from="1760997079609" duration="1311000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/tp2_lassana_damoi/MonstreApplication.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
