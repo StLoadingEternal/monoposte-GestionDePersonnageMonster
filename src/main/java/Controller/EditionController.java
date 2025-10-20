@@ -93,7 +93,9 @@ public class EditionController implements Initializable {
     }
 
     public void onAjoutAction(){
-        MonstreApplication.metier.ajouterMonstre(nomMonstre.getText(), vieSpinner.getValue(), familleMonstre.getText(), armeMonstre.getText());
+        if (MonstreApplication.metier.ajouterMonstre(nomMonstre.getText(), vieSpinner.getValue(), familleMonstre.getText(), armeMonstre.getText())){
+            afficherAfficherAlerte("Ce monstre existe deja ! (les monstres ne peuvent avoir le meme nom)");
+        }
     }
 
     public void onEffacerAction(){
@@ -101,5 +103,13 @@ public class EditionController implements Initializable {
         familleMonstre.setText("");
         armeMonstre.setText("");
         vieSpinner.getValueFactory().setValue(0);
+    }
+
+    public void afficherAfficherAlerte(String message){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Information");
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
     }
 }

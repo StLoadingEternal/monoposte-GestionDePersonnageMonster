@@ -4,6 +4,7 @@ import Model.Monstre.Monstre;
 import Model.Monstre.MonstreMetier;
 import com.example.tp2_lassana_damoi.MonstreApplication;
 import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,8 +15,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class RechercheController implements Initializable {
-
-    private MonstreController monstreController;
 
     @FXML
     private TableView<Monstre> tableData;
@@ -68,8 +67,6 @@ public class RechercheController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         intialiserTableau();
         intialiserSpinner();
-        monstreController = MonstreController.getInstance();
-        monstreController.setMonstres(tableData.getItems());
         connexionBtn.setOnAction(e -> {
             try {
                 mainApp.fenetreConnexion();
@@ -83,9 +80,22 @@ public class RechercheController implements Initializable {
         effaceSelectionBtn.setOnAction(e -> {
             Monstre monstre = tableData.getSelectionModel().getSelectedItem();
             if (monstre != null) {
-                MonstreController.supprimerMonstre(monstre, tableData);
+                MonstreApplication.metier.supprimerMonstre(monstre);
             }
         });
+
+        //mettre a jour en fonction des changements sur le monstre data
+        monstres.addListener(
+                (ListChangeListener<? super Monstre>) change -> {
+                    while(change.next()) {
+                        if (change.wasAdded() || change.wasRemoved() || change.wasUpdated()) {
+                            intialiserTableau();
+                        }
+                    }
+                }
+        );
+
+        // Fermer l'application
     }
 
     public void intialiserSpinner() {

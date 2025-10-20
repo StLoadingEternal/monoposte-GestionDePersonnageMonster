@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d74c68ff-c26a-41b7-b4e6-761a05c1feee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EditionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EditionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MonstreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/MonstreController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/RechercheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/RechercheController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Monstre/MonstreMetier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Monstre/MonstreMetier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +53,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "OverrideImplement.generate.javadoc": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -147,22 +149,11 @@
       <updated>1759691624947</updated>
       <workItem from="1759691626387" duration="2196000" />
       <workItem from="1759694853363" duration="24840000" />
-      <workItem from="1760997079609" duration="1311000" />
+      <workItem from="1760997079609" duration="2746000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/tp2_lassana_damoi/MonstreApplication.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -23,9 +23,7 @@ public class MonstreController{
         return instance;
     }
 
-    public static boolean supprimerMonstre(Monstre monstre, TableView<Monstre> tabableView){
-        return tabableView.getItems().remove(monstre);
-    }
+
 
     public List<Monstre> getMonstres() {
         return monstres;
