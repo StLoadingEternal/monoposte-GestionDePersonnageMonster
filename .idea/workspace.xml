@@ -7,9 +7,8 @@
     <list default="true" id="d74c68ff-c26a-41b7-b4e6-761a05c1feee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EditionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EditionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MonstreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/MonstreController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/RechercheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/RechercheController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Monstre/MonstreMetier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Monstre/MonstreMetier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp2_lassana_damoi/MonstreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp2_lassana_damoi/MonstreApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +148,7 @@
       <updated>1759691624947</updated>
       <workItem from="1759691626387" duration="2196000" />
       <workItem from="1759694853363" duration="24840000" />
-      <workItem from="1760997079609" duration="2746000" />
+      <workItem from="1760997079609" duration="6545000" />
     </task>
     <servers />
   </component>

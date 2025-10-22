@@ -86,7 +86,7 @@ public class EditionController implements Initializable {
         tableData.setItems(monstres);
 
         // Initialisation des colonnes avec les getters correspondants
-        vieColumn.setCellValueFactory(new PropertyValueFactory<>("vie"));
+        vieColumn.setCellValueFactory(new PropertyValueFactory<>("pointVie"));
         armeColumn.setCellValueFactory(new PropertyValueFactory<>("arme"));
         familleColumn.setCellValueFactory(new PropertyValueFactory<>("famille"));
         nomColumn.setCellValueFactory(new PropertyValueFactory<>("nom"));

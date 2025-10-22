@@ -11,9 +11,13 @@ import javafx.stage.Stage;
 
 public class MonstreApplication extends Application {
 
-    private Stage primaryStage; // La fenêtre principale
+    private static Stage primaryStage; // La fenêtre principale
     public static MonstreMetier metier = new MonstreMetier();//Classe de metier des  monstres
 
+
+    public static Stage getPrimaryStage() {
+        return primaryStage;
+    }
     @Override
     public void start(Stage primaryStage) throws Exception {
         this.primaryStage = primaryStage;
