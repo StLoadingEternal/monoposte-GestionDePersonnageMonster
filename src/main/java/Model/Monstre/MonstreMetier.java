@@ -11,6 +11,9 @@ public class MonstreMetier {
 
     public MonstreMetier() {
         this.monstreData.add(new Monstre("Lansaxx",90, "Dragons", "Souffle de feu"));
+        this.monstreData.add(new Monstre("Radagon",100, "Roi", "Eclair"));
+        this.monstreData.add(new Monstre("Malenia",100, "Reine", "Epée"));
+        this.monstreData.add(new Monstre("GrandeTorche",90, "Torche", "flammes"));
     }
 
     public ObservableList<Monstre> getMonstreData() {

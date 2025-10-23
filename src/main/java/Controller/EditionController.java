@@ -8,6 +8,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.util.converter.IntegerStringConverter;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -29,14 +31,10 @@ public class EditionController implements Initializable {
     @FXML
     private TableColumn<Monstre, String> nomColumn;
 
-    @FXML
-    private Button ajouterBtn;
 
     @FXML
     private Button deconnexionBtn;
 
-    @FXML
-    private Button effaceFormEditerBtn;
 
     @FXML
     private TextField armeMonstre;
@@ -74,6 +72,10 @@ public class EditionController implements Initializable {
                 throw new RuntimeException(ex);
             }
         });
+
+        quitterCreerBtn.setOnAction(e -> {
+            MonstreApplication.getPrimaryStage().close();
+        });
     }
 
     public void intialiserSpinner() {
@@ -82,14 +84,22 @@ public class EditionController implements Initializable {
     }
 
     public void initialiserTableau() {
+        tableData.setEditable(true);
 
         tableData.setItems(monstres);
 
         // Initialisation des colonnes avec les getters correspondants
         vieColumn.setCellValueFactory(new PropertyValueFactory<>("pointVie"));
+        vieColumn.setCellFactory(TextFieldTableCell.forTableColumn(new IntegerStringConverter()));
+
         armeColumn.setCellValueFactory(new PropertyValueFactory<>("arme"));
+        armeColumn.setCellFactory(TextFieldTableCell.forTableColumn());
+
         familleColumn.setCellValueFactory(new PropertyValueFactory<>("famille"));
+        familleColumn.setCellFactory(TextFieldTableCell.forTableColumn());
+
         nomColumn.setCellValueFactory(new PropertyValueFactory<>("nom"));
+        nomColumn.setCellFactory(TextFieldTableCell.forTableColumn());
     }
 
     public void onAjoutAction(){

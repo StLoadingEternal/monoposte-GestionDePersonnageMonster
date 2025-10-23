@@ -22,17 +22,10 @@ public class ConnexionController implements Initializable {
     private Text errorText;
 
     @FXML
-    private Button gererBtn;
-
-    @FXML
     private TextField mdpUsager;
 
-    @FXML
-    private TextField nomUsager;
-
     private MonstreApplication mainApp;
-
-
+    
     public void setMainApp(MonstreApplication mainApp) {
         this.mainApp = mainApp;
     }
