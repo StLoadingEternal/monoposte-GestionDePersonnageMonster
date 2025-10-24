@@ -9,6 +9,15 @@
     <version>1.0-SNAPSHOT</version>
     <name>TP2_Lassana_Damoi</name>
 
+    <contributors>
+        <contributor>
+            <name>Damoi Tchang Eric</name>
+        </contributor>
+        <contributor>
+            <name>Lassana Cisse</name>
+        </contributor>
+    </contributors>
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.10.2</junit.version>

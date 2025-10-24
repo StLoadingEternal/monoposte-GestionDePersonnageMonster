@@ -13,18 +13,19 @@ import java.util.ResourceBundle;
 
 public class ConnexionController implements Initializable {
 
+    //On a un seul utilisateur un singleton
     private Utilisateur admin = Utilisateur.getInstance("Ted16", "1616");
 
     @FXML
-    private Button annulerBtn;
+    private Button annulerBtn;//Bouton annuler
 
     @FXML
-    private Text errorText;
+    private Text errorText;//Text d'erreur à afficher
 
     @FXML
-    private TextField mdpUsager;
+    private TextField mdpUsager; // champ mot de passe
 
-    private MonstreApplication mainApp;
+    private MonstreApplication mainApp;//Reférence sur l'application principale
     
     public void setMainApp(MonstreApplication mainApp) {
         this.mainApp = mainApp;
@@ -32,6 +33,7 @@ public class ConnexionController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        //Au clic du bouton annuler on lance la fenêtre de recherche
         annulerBtn.setOnAction(e -> {
             try {
                 mainApp.fenetreRecherche();
@@ -42,6 +44,7 @@ public class ConnexionController implements Initializable {
     }
 
     public void onActionConnecter(){
+        //Au clic du bouton connecter si les infos sont correct on part à la fenêtre de gestion sinon on change le message d'erreur
         if(mdpUsager.getText().trim().equals(admin.getNomUser()) || mdpUsager.getText().trim().equals(admin.getMotDePasse())){
             try {
                 mainApp.fenetreEdition();
@@ -49,7 +52,7 @@ public class ConnexionController implements Initializable {
                 throw new RuntimeException(e);
             }
         }else{
-            errorText.setText("Utilisateur ou mot de passe n'existe pas.");
+            errorText.setText("Utilisateur inexistant ou mot de passe incorrect");
         }
     }
 }

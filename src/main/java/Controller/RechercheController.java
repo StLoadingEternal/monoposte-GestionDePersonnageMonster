@@ -62,16 +62,19 @@ public class RechercheController implements Initializable {
 
     private MonstreApplication mainApp;
 
-    private ObservableList<Monstre> monstres = MonstreApplication.metier.getMonstreData();
+    private ObservableList<Monstre> monstres = MonstreApplication.metier.getMonstreData(); //Les données de base se l'application
 
     public void setMainApp(MonstreApplication mainApp) {
         this.mainApp = mainApp;
-    }
+    } // Référence sur l'application principale
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        //Configurer les Widgets
         intialiserTableau();
         intialiserSpinner();
+
+        //Aller à la page de connection
         connexionBtn.setOnAction(e -> {
             try {
                 mainApp.fenetreConnexion();
@@ -80,7 +83,7 @@ public class RechercheController implements Initializable {
             }
         });
 
-        // effacer selection
+        // effacer le monstre sélectionner dans le tableau
         effaceSelectionBtn.setOnAction(e -> {
             Monstre monstre = tableData.getSelectionModel().getSelectedItem();
             if (monstre != null) {
@@ -88,12 +91,12 @@ public class RechercheController implements Initializable {
             }
         });
 
-        //mettre a jour en fonction des changements sur le monstre data
+        //mettre a jour en fonction des changements sur les données des monstres
         monstres.addListener(
                 (ListChangeListener<? super Monstre>) change -> {
                     while(change.next()) {
                         if (change.wasAdded() || change.wasRemoved() || change.wasUpdated()) {
-                            intialiserTableau();
+                            tableData.setItems(monstres);
                         }
                     }
                 }
@@ -104,7 +107,7 @@ public class RechercheController implements Initializable {
             MonstreApplication.getPrimaryStage().close();
         });
 
-        //recherche de monstre
+        //recherche de monstre en fonction de son nom et ses points de vie (min et max)
         rechercheBtn.setOnAction(e -> {
             String nomRecherhcer =  nomRecherche.getText();
             int maxVie = maxVieSpinner.getValue();
@@ -114,21 +117,33 @@ public class RechercheController implements Initializable {
             tableData.setItems(FXCollections.observableArrayList(monstresTrouves));
         });
 
-        //effacer le formulaire de recherche
+        //effacer les données du formulaire de recherche
         effaceFormRechBtn.setOnAction(e -> {
             tableData.setItems(monstres);
+            nomRecherche.setText("");
+            maxVieSpinner.getValueFactory().setValue(0);
+            minVieSpinner.getValueFactory().setValue(0);
         });
     }
 
+    /**
+     * Rechercher un monstre à partir de divers infos
+     * @param nomRecherhcer le nom du monstre
+     * @param maxVie ses points de vie maximum
+     * @param minVie ses points de vie minimum
+     * @return les monstres trouvés
+     */
     private List<Monstre> findMonstres(String nomRecherhcer, int maxVie, int minVie) {
         return tableData.getItems().stream().filter(
                 monstre ->
                         monstre.getNom().equals(nomRecherhcer)
                         && (monstre.getPointVie() >= minVie && monstre.getPointVie() <= maxVie)
         ).collect(Collectors.toList());
-
     }
 
+    /**
+     * Configurer les spinner de points de vie
+     */
     public void intialiserSpinner() {
         SpinnerValueFactory<Integer> valueFactoryMin = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100, 0);
         SpinnerValueFactory<Integer> valueFactoryMax = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100, 0);
@@ -136,10 +151,13 @@ public class RechercheController implements Initializable {
         maxVieSpinner.setValueFactory(valueFactoryMax);
     }
 
+    /**
+     * Configurer le tableView qui va accueillir les monstres
+     */
     private void intialiserTableau() {
-        tableData.setItems(monstres);//Redondance
+        tableData.setItems(monstres);
 
-        // Initialisation des colonnes avec les getters correspondants
+        // Initialisation des colonnes avec les propriétés de monstres correspondants
         vieColumn.setCellValueFactory(new PropertyValueFactory<>("pointVie"));
         armeColumn.setCellValueFactory(new PropertyValueFactory<>("arme"));
         familleColumn.setCellValueFactory(new PropertyValueFactory<>("famille"));

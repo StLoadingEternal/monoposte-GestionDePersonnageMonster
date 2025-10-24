@@ -7,6 +7,7 @@ import javafx.beans.property.StringProperty;
 
 public class Monstre implements Cloneable {
 
+    //Les propriétés
     private StringProperty nom = new SimpleStringProperty();
     private IntegerProperty pointVie = new SimpleIntegerProperty();
     private StringProperty famille = new SimpleStringProperty();

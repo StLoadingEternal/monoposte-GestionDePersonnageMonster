@@ -9,6 +9,7 @@ public class MonstreMetier {
     private static ObservableList<Monstre> monstreData = FXCollections.observableArrayList();
 
 
+    //Les données de base des monstres de l'application
     public MonstreMetier() {
         this.monstreData.add(new Monstre("Lansaxx",90, "Dragons", "Souffle de feu"));
         this.monstreData.add(new Monstre("Radagon",100, "Roi", "Eclair"));
@@ -20,6 +21,14 @@ public class MonstreMetier {
         return monstreData;
     }
 
+    /**
+     * Modifier un monstre
+     * @param nom son nom
+     * @param pontVie ses points de vie
+     * @param famille son nom de famille
+     * @param arme son arme
+     * @return boolean le monstre existe oui ou nom
+     */
     public boolean ajouterMonstre(String nom, int pontVie, String famille, String arme) {
         boolean monstreExist = monstreData.stream().anyMatch(m->
                 m.getNom().equals(nom)
@@ -31,6 +40,14 @@ public class MonstreMetier {
         return monstreExist;
     }
 
+    /**
+     * Modifier un monstre
+     * @param monstre
+     * @param nom son nouveau nom
+     * @param pontVie ses points de vie
+     * @param famille son nom de famille
+     * @param arme son arme
+     */
     public void modifierMonstre(Monstre monstre, String nom, int pontVie, String famille, String arme) {
         monstre.setNom(nom);
         monstre.setArme(arme);
@@ -38,6 +55,11 @@ public class MonstreMetier {
         monstre.setPointVie(pontVie);
     }
 
+    /**
+     * Supprimer un monstre
+     * @param monstre
+     * @return
+     */
     public static boolean supprimerMonstre(Monstre monstre){
         return monstreData.remove(monstre);
     }
