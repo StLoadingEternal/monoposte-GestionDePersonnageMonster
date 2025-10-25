@@ -17,6 +17,6 @@
       <TextField fx:id="mdpUsager" promptText="Mot de passe " style="-fx-border-color: #000000;" />
       <Button fx:id="gererBtn" mnemonicParsing="false" onAction="#onActionConnecter" text="Gérer la liste des monstres" />
       <Button fx:id="annulerBtn" mnemonicParsing="false" text="Annuler" />
-      <Text fx:id="errorText" fill="#ee0e0e" strokeType="OUTSIDE" strokeWidth="0.0" text="Si problème, afficher un message d'erreur" />
+      <Text fx:id="errorText" fill="#ee0e0e" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
    </children>
 </VBox>

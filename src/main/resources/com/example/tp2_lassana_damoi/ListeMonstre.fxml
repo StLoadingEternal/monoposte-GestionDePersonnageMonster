@@ -105,11 +105,6 @@
             </TableView>
             <HBox prefHeight="0.0" prefWidth="598.0">
                <children>
-                  <Button fx:id="effaceSelectionBtn" mnemonicParsing="false" styleClass="jaune" text="Effacer la sélection">
-                     <font>
-                        <Font name="Verdana Bold" size="11.0" />
-                     </font>
-                  </Button>
                   <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
                   <Button fx:id="quitterBtn" mnemonicParsing="false" prefHeight="28.0" prefWidth="58.0" styleClass="rouge" text="Quitter">
                      <font>

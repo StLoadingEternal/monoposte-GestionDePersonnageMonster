@@ -6,12 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d74c68ff-c26a-41b7-b4e6-761a05c1feee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ConnexionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ConnexionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EditionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EditionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/RechercheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/RechercheController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Monstre/Monstre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Monstre/Monstre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Monstre/MonstreMetier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Monstre/MonstreMetier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tp2_lassana_damoi/EditerMonstre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp2_lassana_damoi/EditerMonstre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tp2_lassana_damoi/Identification.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp2_lassana_damoi/Identification.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tp2_lassana_damoi/ListeMonstre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp2_lassana_damoi/ListeMonstre.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +154,7 @@
       <workItem from="1761225608948" duration="1536000" />
       <workItem from="1761312705793" duration="4430000" />
       <workItem from="1761317205231" duration="103000" />
+      <workItem from="1761356791651" duration="2703000" />
     </task>
     <servers />
   </component>

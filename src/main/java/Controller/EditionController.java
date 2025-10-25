@@ -46,6 +46,9 @@ public class EditionController implements Initializable {
     private TextField nomMonstre;
 
     @FXML
+    private Button effaceSelectionBtn;
+
+    @FXML
     private Button quitterCreerBtn;
 
     @FXML
@@ -78,6 +81,14 @@ public class EditionController implements Initializable {
         //Sortir de l'application
         quitterCreerBtn.setOnAction(e -> {
             MonstreApplication.getPrimaryStage().close();
+        });
+
+        // effacer le monstre sélectionner dans le tableau
+        effaceSelectionBtn.setOnAction(e -> {
+            Monstre monstre = tableData.getSelectionModel().getSelectedItem();
+            if (monstre != null) {
+                MonstreApplication.metier.supprimerMonstre(monstre);
+            }
         });
     }
 

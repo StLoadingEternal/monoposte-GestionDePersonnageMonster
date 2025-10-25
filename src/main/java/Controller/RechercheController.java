@@ -43,9 +43,6 @@ public class RechercheController implements Initializable {
     private Button effaceFormRechBtn;
 
     @FXML
-    private Button effaceSelectionBtn;
-
-    @FXML
     private Spinner<Integer> maxVieSpinner;
 
     @FXML
@@ -80,14 +77,6 @@ public class RechercheController implements Initializable {
                 mainApp.fenetreConnexion();
             } catch (Exception ex) {
                 throw new RuntimeException(ex);
-            }
-        });
-
-        // effacer le monstre sélectionner dans le tableau
-        effaceSelectionBtn.setOnAction(e -> {
-            Monstre monstre = tableData.getSelectionModel().getSelectedItem();
-            if (monstre != null) {
-                MonstreApplication.metier.supprimerMonstre(monstre);
             }
         });
 
